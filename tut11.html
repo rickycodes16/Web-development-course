@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>This is a paragraph.</p>
+    </div>
+    <div class="container">
+        <p>This is another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph.</p>
+        <!-- Here, (&nbsp;) is used to create a non-breaking space. It will create a space between the words and it will not break the line. We can use multiple &nbsp; to create more space. -->
+        <!-- Although, it's not a good practice to use &nbsp; for creating space. We should use CSS for that. But it's just an example to show how we can use HTML entities.  -->
+        <p>paragraph is writeen like this
+        <p></p>
+        <!-- i want to add <p> in the last but if we write it like this, HTML think of it as an tag and don't write this so we use entities -->
+        <p>paragraph is writeen like this &lt;p&gt;</p>
+        <!-- now it will write <p> in the last. We can use &lt; for < and &gt; for >. We can also use &amp; for & and &quot; for " and &apos; for ' and many more entities are there. We can use them to write special characters in HTML. -->
+            <p> pound is written like this &pound;</p>
+            <p> copyright is written like this &copy;</p>
+            <p> Empty character is written like this &#8203;</p>
+    </div>  
+
+</body>
+
+</html>
