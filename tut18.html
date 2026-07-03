@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and backgrounds </title>
+    <style>
+        #firstpara {
+            background-color: lightblue;
+            height: 100px;
+            width: 455px;
+            border-width: 5px;
+            border-style: solid;
+            /*it gives the border a solid line */
+            border-color: black;
+            /*it gives the border a black color */
+            border-radius: 10px;
+            /*it gives the border a rounded corner */
+        }
+        /* if we don't want to write border - width, border-style, border-color and border-radius separately then we can write it in one line as below: */
+        /* border: 5px solid black; /*
+border-radius: 10px; */
+
+        #secondpara {
+            background-color: rgb(84, 103, 249);
+            height: 100px;
+            width: 455px;
+           border-top-left-radius: 10px;
+           border-bottom-right-radius: 20px;
+           border-bottom: 10px solid black;
+           border-left: 10px solid rgb(0, 0, 0);
+        }
+
+        #thirdpara {
+            background-color: rgb(84, 103, 249);
+            height: 300px;
+            width: 600px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe0LZD395VGCra-D1EZR7Xqw45aNSP3WX0qF7dcMn_DA&s=10);
+            background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat in x and y direction respectively */ 
+            background-size: cover;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is heading</h2>
+    <p id="firstpara">This is paragraph</p>
+
+    <h2>This is second heading</h2>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h2>This is third heading</h2>
+    <p id="thirdpara">This is my third paragraph</p>
+</body>
+
+</html>
