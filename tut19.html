@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+    * {
+    box-sizing: border-box;  /* this will include the padding and border in the width of the box */
+    }
+
+    body{
+        background-color:rgb(33, 9, 60)
+        
+    }
+
+    .container{
+        background-color: rgb(197, 197, 230);
+        border: 3px solid black;
+        padding: 20px;       /*  this is the padding for all sides */
+        /* padding-top: 50px;     this is the padding for top side 
+        padding-bottom: 50px;  this is the padding for bottom side 
+        padding-left: 100px;   this is the padding for left side    
+        padding-right: 100px;  this is the padding for right side  */
+
+        /* we can add margin the same way as padding */
+      margin: 35px;
+
+      /* now if we wanna add multiple paddings/margin but in 1 line then we can do it as below:
+
+      padding: 10px 20px 30px 40px;    this is the padding/margin for top, right, bottom and left respectively  ( t r b l ) */
+
+      /* we can also add padding/margin for 2 sides in 1 line as below:
+      padding: 10px 20px;   this is the padding/margin for top and bottom and right and left respectively like y(top/bottom) and x(right/left) axis  ( y x ) */
+      border-radius: 23px;
+      width: 533px;
+      
+    } 
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus numquam laboriosam dicta ducimus natus impedit vero quia sit distinctio in, perferendis dolores.</p>
+
+    </div>
+
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus numquam laboriosam dicta ducimus natus impedit vero quia sit distinctio in, perferendis dolores.</p>
+
+    </div>
+
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus numquam laboriosam dicta ducimus natus impedit vero quia sit distinctio in, perferendis dolores.</p>
+
+    </div>
+</body>
+</html>
